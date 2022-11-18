@@ -29,7 +29,8 @@
     Data Storage - This is used to save data locally such as cookies. Browsers also support 
     storage mechanisms such as WebSQL etc.
     
-    ![202351126-8add9f91-4ff2-434d-8371-16c816d585d5](https://user-images.githubusercontent.com/117629490/202457973-fcff0e26-4e7f-40ce-833b-63f7039202ff.png)
+![202351126-8add9f91-4ff2-434d-8371-16c816d585d5](https://user-images.githubusercontent.com/117629490/202662325-034444b5-d66f-49dc-9610-26b2e2f9ed32.png)
+
     
     
 ## C - Rendering engine and its use
@@ -40,7 +41,8 @@
     For example, displaying pdf information using a PDF viewer plug-in.
     
     
-    ![Screenshot-2019-11-12-at-3 (1)](https://user-images.githubusercontent.com/117629490/202483289-cc3358d0-ae21-4f94-8031-806ad7894f84.png)
+    ![Screenshot-2019-11-12-at-3 (1)](https://user-images.githubusercontent.com/117629490/202662398-3781bbb3-f6a4-4655-8d5e-cd8cf8821740.png)
+
 
     
 ## D - Parsers (HTML, CSS, etc)
