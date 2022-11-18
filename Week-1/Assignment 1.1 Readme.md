@@ -41,7 +41,8 @@
     For example, displaying pdf information using a PDF viewer plug-in.
     
     
-    ![Screenshot-2019-11-12-at-3 (1)](https://user-images.githubusercontent.com/117629490/202662398-3781bbb3-f6a4-4655-8d5e-cd8cf8821740.png)
+![Screenshot](https://user-images.githubusercontent.com/117629490/202668110-a1f51652-4708-43a5-830a-3ff504b92614.png)
+
 
 
     
@@ -75,6 +76,23 @@
     class (constructor function).
     
 ## G - Order of script processing
+
+    Depending on the type of object, the task may have more than one Process page on which you can write scripts. 
+    The scripts in the Process pages are processed in the following order:
+
+    Pre-Process page and Process page
+    Child Post Process page
+    Post Process page
+    
+    JavaScript statements that appear between tags are executed in order of appearance; when more than one script appears in a file, 
+    the scripts are executed in the order in which they appear. If a script calls document.write( ), any text passed to that 
+    method is inserted into the document immediately after the closing tag and is parsed by the HTML parser when the script 
+    finishes running. The same rules apply to scripts included from separate files with the src attribute. 
+    
+    The detail that is not so obvious, but is nevertheless important to remember, is that execution of scripts occurs as 
+    part of the web browser's HTML parsing process. Thus, if a script appears in the section of an HTML document, none of 
+    the section of the document has been defined yet. This means that the JavaScript objects that represent the contents of 
+    the document body, such as Form and Link, have not been created yet and cannot be manipulated by that code.
 
     
 ## H - Layout and Paint
