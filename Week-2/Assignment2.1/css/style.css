@@ -1,0 +1,76 @@
+.main{
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 200px;
+    
+    display: flex ;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: center;
+    
+
+
+}
+
+.square-red{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    transition-property: transform;
+    transition-duration: 1s;
+    position: relative;
+   
+   
+}
+
+
+
+.square-yellow{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    transition-property: transform;
+    transition-duration: 1s;
+    position: relative;
+    
+    
+
+
+}
+
+.square-blue{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    transition-property: transform;
+    transition-duration: 1s;
+    position: relative;
+    
+    
+
+
+}
+
+.square-green{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    transition-property: transform;
+    transition-duration: 1s;
+    position: relative;
+    
+}
+
+
+
+
+
+
+
+
+
+
