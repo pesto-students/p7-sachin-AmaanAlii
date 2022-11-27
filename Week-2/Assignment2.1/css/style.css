@@ -1,68 +1,89 @@
-.container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color-scheme: light dark;
+    background-color: rgb(253, 249, 245);
 }
 
-.main {
-  height: 200px;
-  width: 200px;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
+.header{
+    background-color: black;
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: xx-large;
+    border-radius: 10px;
+    
 }
 
-.square-red,
-.square-yellow,
-.square-blue,
-.square-green {
-  height: 100px;
-  width: 100px;
-  transition: 1s linear;
-  transition-timing-function: ease-in-out;
+.intro-container{
+    display: flex;
+
 }
 
-.square-red {
-  background-color: red;
-  transform-origin: top left;
+
+.intro{
+    margin-top: 20px;
+    margin-left: 10%;
+    text-align: center;
+    background-color: rgb(255, 204, 159);
+    font-style: italic;
+    font-size: x-large;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.square-yellow {
-  background-color: yellow;
-  transform-origin: top right;
+.articles-container{
+    font-size: x-large;
+    width: 75%;
+    height: 50%;
+    left: 12%;
+    margin-top: 10%;
+    position: relative;
 }
 
-.square-blue {
-  background-color: blue;
-  transform-origin: bottom left;
-  
+.left-side{
+    width: 45%;
+    display: inline-block;
+    margin-right: 5%;
 }
 
-.square-green {
-  background-color: green;
-  transform-origin: bottom right;
+.image-container{
+    /* margin-top: 20%; */
 }
 
-.main:hover .square-red {
-  transform: rotate(90deg);
+.right-side{
+    width: 45%;
+    display: inline-block;
+    position: absolute;
+    margin-left: 5%;
 }
 
-.main:hover .square-blue {
-  transform: rotate(-90deg);
+img{
+   width: 100%;
 }
 
-.main:hover .square-yellow {
-  transform: rotate(-90deg);
+.form-container{
+    background-color: rgb(231, 167, 125);
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    left: 25%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
 }
 
-.main:hover .square-green {
-  transform: rotate(90deg);
-}
-
-.text {
-  position: absolute;
-  z-index: -1;
+form{
+    font-size: x-large;
+    /* display: flex; */
+    position: relative;
+    align-content: center;
+    justify-content: space-around;
+    
 }
