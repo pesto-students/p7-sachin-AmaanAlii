@@ -1,4 +1,5 @@
 //.call Function
+//
 console.log("\n \n\n Example of .call Function\n\n\n")
 function printaddress(){
     var address = [
@@ -20,8 +21,9 @@ printaddress.call(amaanadd); //calling printaddress function with a separate obj
 //
 //
 //
-
+//
 //.bind Function
+//
 console.log("\n \n\n Example of .bind Function\n\n\n")
 
 function product(a,b){
@@ -36,6 +38,7 @@ console.log(productB());
 //
 //
 //
+//.apply Function
 //
 console.log("\n \n\n Example of .apply Function\n\n\n")
 var arrayofnumbers = [9,8,5,4,2,10,7,6,];

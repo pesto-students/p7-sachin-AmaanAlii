@@ -30,4 +30,4 @@ console.log(squareM(30));
 console.log(squareM(30));
 console.log(squareM(40));
 console.log(squareM(40));
-
+ 
