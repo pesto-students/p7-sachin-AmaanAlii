@@ -1,0 +1,68 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.square-red,
+.square-yellow,
+.square-blue,
+.square-green {
+  height: 100px;
+  width: 100px;
+  transition: 1s linear;
+  transition-timing-function: ease-in-out;
+}
+
+.square-red {
+  background-color: red;
+  transform-origin: top left;
+}
+
+.square-yellow {
+  background-color: yellow;
+  transform-origin: top right;
+}
+
+.square-blue {
+  background-color: blue;
+  transform-origin: bottom left;
+  
+}
+
+.square-green {
+  background-color: green;
+  transform-origin: bottom right;
+}
+
+.main:hover .square-red {
+  transform: rotate(90deg);
+}
+
+.main:hover .square-blue {
+  transform: rotate(-90deg);
+}
+
+.main:hover .square-yellow {
+  transform: rotate(-90deg);
+}
+
+.main:hover .square-green {
+  transform: rotate(90deg);
+}
+
+.text {
+  position: absolute;
+  z-index: -1;
+}
