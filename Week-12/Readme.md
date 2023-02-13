@@ -1,10 +1,11 @@
 # To Do List on React
 This app lets the user create a To-Do List by letting the user input the task name and when the user hits the "Add Task" button, the task is added to the list.
+Another functionality is that there is a checkbox before every task and when the user checks it the task is marked done by making the task name strike-through.
 
 
 
 # Getting Started
-These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will help you get a copy of the project up and running on your local machine for testing purposes.
 
 
 
