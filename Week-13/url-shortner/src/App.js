@@ -1,7 +1,30 @@
 import logo from "./logo.svg";
 import "./App.css";
+import React from "react";
+import { useState } from "react";
 
 function App() {
+  const [longUrl, setLongUrl] = useState("");
+  const [shortUrl, setShortUrl] = useState("");
+  const [isCopied, setIsCopied] = useState(false);
+
+  const urlApiCall = (longUrl) => {
+    const apiUrl = `https://api.shrtco.de/v2/shorten?url=${longUrl}`;
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => setShortUrl(data.result.short_link));
+    setIsCopied(false);
+  };
+
+  const handleUrlChange = (event) => {
+    setLongUrl(event.target.value);
+  };
+
+  const handleCopyClick = () => {
+    navigator.clipboard.writeText(shortUrl);
+    setIsCopied(true);
+  };
+
   return (
     <div class="page">
       <div class="topnav">
@@ -34,17 +57,23 @@ function App() {
             <input
               type="text"
               name="linkinput"
+              value={longUrl}
+              onChange={handleUrlChange}
               placeholder="Shorten a link here..."
             ></input>
-            <button>Shorten it!</button>
+            <button onClick={() => urlApiCall(longUrl)}>Shorten it!</button>
           </div>
           <div class="linkdisplay">
             <input
               type="text"
               name="linkinput"
+              value={shortUrl}
+              readOnly
               placeholder="Shortened Link will be displayed here..."
             ></input>
-            <button>Copy Link</button>
+            <button onClick={handleCopyClick}>
+              {isCopied ? "Link Copied!" : "Copy Link"}
+            </button>
           </div>
         </div>
       </div>
