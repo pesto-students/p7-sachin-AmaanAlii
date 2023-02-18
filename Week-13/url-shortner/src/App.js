@@ -5,7 +5,7 @@ import { useState } from "react";
 
 function App() {
   const [longUrl, setLongUrl] = useState("");
-  const [shortUrl, setShortUrl] = useState("");
+  const [shortUrl, setShortUrl] = useState(null);
   const [isCopied, setIsCopied] = useState(false);
 
   const urlApiCall = (longUrl) => {
@@ -22,6 +22,7 @@ function App() {
 
   const handleCopyClick = () => {
     navigator.clipboard.writeText(shortUrl);
+    if (shortUrl == null) return;
     setIsCopied(true);
   };
 
@@ -71,7 +72,12 @@ function App() {
               readOnly
               placeholder="Shortened Link will be displayed here..."
             ></input>
-            <button onClick={handleCopyClick}>
+            <button
+              onClick={handleCopyClick}
+              style={{
+                backgroundColor: isCopied ? "green" : "",
+              }}
+            >
               {isCopied ? "Link Copied!" : "Copy Link"}
             </button>
           </div>
