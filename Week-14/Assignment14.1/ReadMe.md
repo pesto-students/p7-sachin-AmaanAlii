@@ -17,4 +17,4 @@ To build the app:
 7: Then set-up the name for your domain and you are good to go.
 
 ## Link-Shortner Domain:
-shortenyourlinks.netlify.app
+www.shortenyourlinks.netlify.app
