@@ -13,3 +13,6 @@ function conSubArray(A) {
 }
 
 console.log(conSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+
+// Time Complexity - O(n)
+// Space Complexity - O(1)

@@ -21,9 +21,12 @@ function stockProfit(arr) {
 
   if (max > min) {
     let profit = max - min;
-    console.log(`Profit = ${profit}`);
-  } else console.log(`Profit = 0`);
+    return profit;
+  } else return 0;
 }
 
-stockProfit([7, 1, 5, 3, 6, 4]);
-stockProfit([7, 6, 4, 3, 1]);
+console.log("Profit = ", stockProfit([7, 1, 5, 3, 6, 4]));
+console.log("Profit = ", stockProfit([7, 6, 4, 3, 1]));
+
+// Time Complexity - O(n)
+// Space Complexity - O(1)

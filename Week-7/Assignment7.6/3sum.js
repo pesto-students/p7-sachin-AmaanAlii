@@ -27,3 +27,6 @@ function threeSumClosest(S, target) {
 }
 
 console.log(threeSumClosest([-1, 2, 1, -4], 1));
+
+// Time Complexity - O(n^2) - because of the 2 nested loops.
+// Space Complexity - O(1) - because we just use one additional variable
