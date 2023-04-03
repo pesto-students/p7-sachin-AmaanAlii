@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media screen and (max-width: 768px) {
+  .midtext h1 {
+    font-size: 4em;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+}
+
+.topnav {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+}
+
+.topnav a {
+  padding: 2em;
+  margin-left: 23m;
+  text-decoration: none;
+}
+
+.navhead {
+  padding-left: 20%;
+}
+
+.midnav {
+  padding-left: 15%;
+}
+
+.rightnav {
+  padding-left: 10%;
+}
+
+.mainpage {
+  background-color: rgb(255, 255, 255);
+}
+
+.midtext {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.midtext h1 {
+  font-size: 4em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 20em;
+}
+
+img {
+  margin-top: 2%;
+  margin-left: 5%;
+  max-width: 90%;
+  max-height: 90%;
+  float: right;
+  position: relative;
+}
+
+.linkio > .linkbutton,
+.linkdisplay {
+  background-color: rgb(244, 120, 59);
+  flex: 1 1 20%;
+  margin: auto;
+  padding: 2%;
+  border-radius: 10px;
+  display: flex;
+}
+
+.linkio input {
+  width: 80%;
+  padding: 1% 2%;
+  display: inline-block;
+  border: 1px solid rgb(5, 247, 13);
+  border-radius: 4px;
+}
+
+.linkio {
+  padding: 2%;
+  margin: auto;
+  max-width: 50%;
+}
+
+.linkio button {
+  margin-left: 5%;
+  padding: 1%;
+  border-radius: 10px;
+  background-color: rgb(91, 103, 235);
+  color: rgb(255, 255, 255);
+  font-size: medium;
+}
+
+.linkdisplay {
+  margin-top: 1%;
+}
+
+.footer {
+  display: flex;
+}
+
+.mid > .features,
+.resources,
+.company {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.mid {
+  display: flex;
+  margin: auto;
+}
+
+.footer a {
+  color: rgb(255, 255, 255);
+
+  padding: 10px 10px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer h1,
+h3 {
+  color: rgb(255, 255, 255);
+}
+
+.footer {
+  background-color: black;
+}
